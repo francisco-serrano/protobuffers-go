@@ -1,5 +1,7 @@
 syntax = "proto3";
 
+import "messages/date.proto";
+
 // Person is used to identify users across our system
 message ReferencePerson {
     int32 age = 1;
@@ -38,10 +40,4 @@ message ReferencePerson {
     }
 
     repeated Address addresses = 10;
-}
-
-message Date {
-    int32 year = 1;
-    int32 month = 2;
-    int32 day = 3;
 }
