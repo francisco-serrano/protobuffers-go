@@ -1,12 +1,18 @@
 syntax = "proto3";
 
+// Person is used to identify users across our system
 message Person {
     int32 age = 1;
     string first_name = 2;
     string last_name = 3;
+
+    // small_picture represents a small .jpc file
     bytes small_picture = 4;
     bool is_profile_verified = 5;
+
+    // height of the person in cms
     float height = 6;
 
+    // list of phone numbers
     repeated string phone_numbers = 7;
 }
