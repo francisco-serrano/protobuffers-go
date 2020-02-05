@@ -2,6 +2,8 @@ syntax = "proto3";
 
 import "messages/date.proto";
 
+package person;
+
 // Person is used to identify users across our system
 message ReferencePerson {
     int32 age = 1;
@@ -28,7 +30,7 @@ message ReferencePerson {
     EyeColour eye_colour = 8;
 
     // person's birthday
-    Date birthday = 9;
+    my.date.Date birthday = 9;
 
     // full name is Person.Address
     message Address {
