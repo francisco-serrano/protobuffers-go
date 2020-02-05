@@ -24,4 +24,14 @@ message ReferencePerson {
     }
 
     EyeColour eye_colour = 8;
+
+    // person's birthday
+    Date birthday = 9;
+
+}
+
+message Date {
+    int32 year = 1;
+    int32 month = 2;
+    int32 day = 3;
 }
