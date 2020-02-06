@@ -19,3 +19,6 @@ vendor/
 # Project directories
 .idea
 
+*.bin
+
+*.pb.go
